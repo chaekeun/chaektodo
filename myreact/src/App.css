@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
+
+.App {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.strikeThrough {
+  text-decoration: line-through;
+  color: rgb(113, 113, 113);
+}
+
+.ListBox {
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  place-items: center;
+}
+
+.Tasklist {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding: 7px;
+  margin: 10px;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.501);
+  /* background-color: rgba(73, 86, 135, 0.111); */
+  width: 70vw;
+}
+
+.edit {
+  width: 30vw;
+  border-radius: 7px;
+  background-color: rgb(146, 164, 224);
+}
