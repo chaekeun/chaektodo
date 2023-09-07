@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const path = require("path");
 const MongoClient = require("mongodb").MongoClient;
 const { ObjectId } = require("mongodb");
 const passport = require("passport");
@@ -13,6 +14,7 @@ const crypto = require("crypto");
 const util = require("util");
 const { create } = require("domain");
 
+app.use(express.static(path.join(__dirname, "myreact/build")));
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
