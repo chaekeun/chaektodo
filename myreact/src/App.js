@@ -8,6 +8,7 @@ import axios from "axios";
 import Write from "./components/write";
 import NotFound from "./components/notFound";
 import Fail from "./components/fail";
+import Home from "./components/home";
 
 function App() {
   let [tasks, setTasks] = useState([]);
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/fail" element={<Fail></Fail>}></Route>
 

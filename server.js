@@ -220,6 +220,10 @@ app.post("/api/edit", (req, res) => {
 });
 
 // 여기서부터 수업내용
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/myreact/build/index.html"));
+});
+
 app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "/myreact/build/index.html"));
 });
