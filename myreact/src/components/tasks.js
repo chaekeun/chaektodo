@@ -18,7 +18,7 @@ function Tasks({ tasks, setTasks }) {
 
   const fetchData = () => {
     axios
-      .get(`http://localhost:8080/api/tasks/${user}`)
+      .get(`/api/tasks/${user}`)
       .then((res) => {
         let copy = [...res.data];
         setTasks(copy);
