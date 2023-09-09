@@ -228,6 +228,10 @@ app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "/myreact/build/index.html"));
 });
 
+app.get("/fail", (req, res) => {
+  res.sendFile(path.join(__dirname, "/myreact/build/index.html"));
+});
+
 app.get("*", isLogined, (req, res) => {
   res.sendFile(path.join(__dirname, "/myreact/build/index.html"));
 });
