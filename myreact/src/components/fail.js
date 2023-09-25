@@ -25,6 +25,14 @@ function Fail() {
 
   return (
     <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/watch?v=c_l1ZwJbAnc"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+
       {errShow ? <p>{errMessage}</p> : <p>fail to load failureFlash</p>}
       <a href="/register">Register page로</a>
     </div>
